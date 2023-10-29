@@ -75,15 +75,15 @@
             <nav :class="{'block': open, 'hidden': !open}"
                  class="flex-grow px-4 pb-4 md:block md:pb-0 md:overflow-y-auto">
 
-                <x-admin-link :href="route('dashboard')" :active="request()->routeIs('admin.document.index')">
+                <x-admin-link :href="route('admin.qrcode.index')" :active="request()->routeIs('admin.document.index')">
                     QR Code
                 </x-admin-link>
 
-                @if(auth()->user()->can('HAS_ALL_FILES_ACCESS'))
+                @hasrole('admin')
                     <x-admin-link :href="route('admin.documents.index')" :active="request()->routeIs('admin.document.index')">
                         Documents
                     </x-admin-link>
-                @endif
+                @endhasrole
 
                 @hasrole('admin')
                     <x-admin-link :href="route('admin.roles.index')" :active="request()->routeIs('admin.roles.index')">
@@ -139,6 +139,8 @@
     </div>
 
     @stack('modals')
-    @livewireScripts
+
+    {{-- @livewireScripts --}}
+    @livewireScriptConfig
 </body>
 </html>

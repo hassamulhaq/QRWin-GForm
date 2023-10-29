@@ -22,6 +22,8 @@
             {{ $slot }}
         </div>
 
-        @livewireScripts
+
+        {{-- @livewireScripts --}}
+        @livewireScriptConfig
     </body>
 </html>
