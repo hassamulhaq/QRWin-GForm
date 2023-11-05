@@ -58,17 +58,17 @@ class PermissionSeeder extends Seeder
             ['id' => 39, 'name' => 'CAN_DELETE_ORDER', 'guard_name' => 'web'],
             ['id' => 40, 'name' => 'HAS_ALL_ORDERS_ACCESS', 'guard_name' => 'web'],
 
-            ['id' => 41, 'name' => 'CAN_VIEW_COMMISSION', 'guard_name' => 'web'],
-            ['id' => 42, 'name' => 'CAN_CREATE_COMMISSION', 'guard_name' => 'web'],
-            ['id' => 43, 'name' => 'CAN_EDIT_COMMISSION', 'guard_name' => 'web'],
-            ['id' => 44, 'name' => 'CAN_DELETE_COMMISSION', 'guard_name' => 'web'],
-            ['id' => 45, 'name' => 'HAS_ALL_COMMISSIONS_ACCESS', 'guard_name' => 'web'],
+            ['id' => 41, 'name' => 'CAN_VIEW_FILE', 'guard_name' => 'web'],
+            ['id' => 42, 'name' => 'CAN_UPLOAD_FILE', 'guard_name' => 'web'],
+            ['id' => 43, 'name' => 'CAN_EDIT_FILE', 'guard_name' => 'web'],
+            ['id' => 44, 'name' => 'CAN_DELETE_FILE', 'guard_name' => 'web'],
+            ['id' => 45, 'name' => 'HAS_ALL_FILES_ACCESS', 'guard_name' => 'web'],
 
-            ['id' => 46, 'name' => 'CAN_VIEW_FILE', 'guard_name' => 'web'],
-            ['id' => 47, 'name' => 'CAN_UPLOAD_FILE', 'guard_name' => 'web'],
-            ['id' => 48, 'name' => 'CAN_EDIT_FILE', 'guard_name' => 'web'],
-            ['id' => 49, 'name' => 'CAN_DELETE_FILE', 'guard_name' => 'web'],
-            ['id' => 50, 'name' => 'HAS_ALL_FILES_ACCESS', 'guard_name' => 'web']
+            ['id' => 46, 'name' => 'CAN_VIEW_COMMISSION', 'guard_name' => 'web'],
+            ['id' => 47, 'name' => 'CAN_CREATE_COMMISSION', 'guard_name' => 'web'],
+            ['id' => 48, 'name' => 'CAN_EDIT_COMMISSION', 'guard_name' => 'web'],
+            ['id' => 49, 'name' => 'CAN_DELETE_COMMISSION', 'guard_name' => 'web'],
+            ['id' => 50, 'name' => 'HAS_ALL_COMMISSIONS_ACCESS', 'guard_name' => 'web'],
         ];
 
         foreach ($permissions as $permission) {
