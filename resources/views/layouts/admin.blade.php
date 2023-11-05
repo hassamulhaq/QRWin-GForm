@@ -79,13 +79,13 @@
                     QR Code
                 </x-admin-link>
 
-                @hasrole('admin')
+                @can('HAS_ALL_FILES_ACCESS')
                     <x-admin-link :href="route('admin.documents.index')" :active="request()->routeIs('admin.document.index')">
                         Documents
                     </x-admin-link>
-                @endhasrole
+                @endcan
 
-                @hasrole('admin')
+                @hasrole('admin|super-admin')
                     <x-admin-link :href="route('admin.roles.index')" :active="request()->routeIs('admin.roles.index')">
                         Roles
                     </x-admin-link>
